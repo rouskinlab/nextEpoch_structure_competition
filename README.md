@@ -1,6 +1,7 @@
 # nextEpoch_structure_competition
 
 ## Installation
+!! First fork this repo so you can push your changes !!
 ```
 pip install -r requirements.txt
 ```
