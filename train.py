@@ -1,5 +1,5 @@
 from src.data import get_dataloaders
-from src.model import ResNet18
+from src.model import RNA_net
 from src.util import compute_f1, compute_precision, compute_recall, plot_structures
 
 import torch
