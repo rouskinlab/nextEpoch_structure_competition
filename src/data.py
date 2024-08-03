@@ -72,6 +72,20 @@ class ToTensor(object):
 
 def get_dataloaders(batch_size=32, max_length=100, split=0.8, max_data=None):
 
+    '''
+    This function returns the training and validation dataloaders.
+    
+    input:
+    - batch_size: int, size of the batch
+    - max_length: int, maximum length of the RNA sequences
+    - split: float, fraction of the data to be used for training
+    - max_data: int, maximum number of data points to be used
+
+    output:
+    - train_loader: DataLoader, training dataloader
+    - val_loader: DataLoader, validation dataloader
+    '''
+
     assert split > 0 and split < 1, 'Split must be between 0 and 1'
     assert max_length > 0, 'Max length must be greater than 0'
     assert batch_size > 0, 'Batch size must be greater than 0'

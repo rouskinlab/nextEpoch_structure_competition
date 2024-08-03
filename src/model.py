@@ -3,7 +3,18 @@ import torch.nn as nn
 
 class RNA_embedding(nn.Module):
 
-    def __init__(self, vocab_size, embedding_dim):
+    '''
+    This class is a simple embedding layer for RNA sequences. 
+
+    input:
+    - embedding_dim: int, dimension of the embedding space
+    - vocab_size: int, size of the vocabulary (number of different nucleotides)
+
+    output:
+    - x: tensor, (N, embedding_dim, L, L), where N is the batch size, L is the length of the sequence 
+    '''
+
+    def __init__(self, embedding_dim, vocab_size=5):
         super(RNA_embedding, self).__init__()
 
         self.table_embedding = nn.Embedding(vocab_size, embedding_dim)
@@ -11,31 +22,35 @@ class RNA_embedding(nn.Module):
 
     def forward(self, x): # x is (N, L) -> embedded as sequence of integer
 
-        x = self.table_embedding(x)                         # (N, L, embedding_dim)
+        # Sequence representation
+        s = self.table_embedding(x)                         # (N, L, embedding_dim)
 
-        # Outer concatenation
-        x = x.unsqueeze(2).repeat(1, 1, x.shape[1], 1)      # (N, L, L, embedding_dim)
-        x = torch.cat((x, x.permute(0, 2, 1, 3)), dim=-1)   # (N, L, L, 2*embedding_dim)
+        # Outer concatenation to get matrix representation
+        m = s.unsqueeze(2).repeat(1, 1, s.shape[1], 1)      # (N, L, L, embedding_dim)
+        m = torch.cat((m, m.permute(0, 2, 1, 3)), dim=-1)   # (N, L, L, 2*embedding_dim)
 
         # Bring back to embedding dimension
-        x = self.fc_input(x)                                # (N, L, L, embedding_dim)        
+        m = self.fc_input(m)                                # (N, L, L, embedding_dim)    
 
-        return x
+        m = m.permute(0, 3, 1, 2)                           # (N, embedding_dim , L, L)   
 
+        return s, m
+
+
+# This is the class to be developed !
 class RNA_net(nn.Module):
 
-    def __init__(self, vocab_size, embedding_dim):
+    def __init__(self, embedding_dim):
         super(RNA_net, self).__init__()
 
-        self.embedding = RNA_embedding(vocab_size, embedding_dim)
-        
+        self.embedding = RNA_embedding(embedding_dim)
 
         # Your layers here
 
     def forward(self, x):
 
-        x = self.embedding(x)
+        s, m = self.embedding(x)
 
         # Your forward pass here
 
-        return x
+        return m
