@@ -92,7 +92,7 @@ def get_dataloaders(batch_size=32, max_length=100, split=0.8, max_data=None):
 
     current_dir = os.path.dirname(os.path.realpath(__file__))
 
-    trainValidation_dataset = RNADataset(os.path.join(current_dir, 'data/data_train_rnastralign.json'), transform=ToTensor(), max_length=max_length, max_data=max_data)
+    trainValidation_dataset = RNADataset(os.path.join(current_dir, 'data/data_train_rnastralign_archiveII.json'), transform=ToTensor(), max_length=max_length, max_data=max_data)
 
     assert len(trainValidation_dataset) > 0, 'Not enough training data found'
 
