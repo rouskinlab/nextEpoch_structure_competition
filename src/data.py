@@ -6,6 +6,8 @@ import pandas as pd
 
 import os
 
+seq2int = {'N' : 0, 'A': 1, 'C': 2, 'G': 3, 'U': 4}
+
 
 class RNADataset(Dataset):
     def __init__(self, json_file, transform=None, max_length=None, max_data=None):
@@ -58,7 +60,6 @@ class ToTensor(object):
         return matrix
     
     def __call__(self, sample):
-        seq2int = {'N' : 0, 'A': 1, 'C': 2, 'G': 3, 'U': 4}
 
         sequence, structure = sample['sequence'], sample['structure']
 
@@ -104,7 +105,12 @@ def get_dataloaders(batch_size=32, max_length=100, split=0.8, max_data=None):
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
-    return train_loader, val_loader
+    # Get test set
+    data_test = pd.read_json(os.path.join(current_dir, 'data/test.json')).T
+    test_references = data_test.index.tolist()
+    test_sequences = [torch.tensor([seq2int[c] for c in sequence], dtype=torch.long) for sequence in data_test.sequence.tolist()]
+
+    return train_loader, val_loader, (test_references, test_sequences)
 
 
 

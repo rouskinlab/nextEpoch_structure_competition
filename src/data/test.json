@@ -1,0 +1,323 @@
+{
+    "2N7X-2D": {
+        "sequence": "GGUAGUUUUGGCAUGACUCUACC"
+    },
+    "1WTT-2D": {
+        "sequence": "GGACCGGAAGGUCC"
+    },
+    "2N3Q-2D": {
+        "sequence": "GCAGCAGGGAACUCACGCUUGCGUAGAGGCUAAGUGCUUCGGCACAGCACAAGCCCGCUGCG"
+    },
+    "2AP0-2D": {
+        "sequence": "AGUGGCGCCGACCACUUAAAAACAACGG"
+    },
+    "2TPK-2D": {
+        "sequence": "GCUGACCAGCUAUGAGGUCAUACAUCGUCAUAGCAC"
+    },
+    "2K96-2D": {
+        "sequence": "GGGCUGUUUUUCUCGCUGACUUUCAGCCCCAAACAAAAAAGUCAGCA"
+    },
+    "2NBZ-2D": {
+        "sequence": "GGGCUCGGUGCACAUGCUUUACAUGUGUUUAGUCGAGCCC"
+    },
+    "2JSE-2D": {
+        "sequence": "GGAGUGGCCGAAAGGCAUCUCC"
+    },
+    "1D0U-2D": {
+        "sequence": "GGGAUCACCAUUAGGGAUCUC"
+    },
+    "2OJ7-2D": {
+        "sequence": "GCUGUUGU"
+    },
+    "7UGA-2D": {
+        "sequence": "GGGUGUAGAAAAGUAAGGGAAACUCAAACCCCUUUCUACACCC"
+    },
+    "17RA-2D": {
+        "sequence": "GGCGUAAGGAUUACCUAUGCC"
+    },
+    "2K4C-2D": {
+        "sequence": "GGGUGAUUAGCUCAGCUGGGAGAGCACCUCCCUUACAAGGAGGGGGUCGGCGGUUCGAUCCCGUCAUCACCCACCA"
+    },
+    "1LDZ-2D": {
+        "sequence": "GCGACCGAGCCAGCGAAAGUUGGGAGUCGC"
+    },
+    "1WKS-2D": {
+        "sequence": "GGCUUUGGAUAAAAGCC"
+    },
+    "6VZC-2D": {
+        "sequence": "GGGCUGUGAUGCUUCGGCAUAUCAGCCC"
+    },
+    "7SHX-2D": {
+        "sequence": "GGACCCAUAACCCACCUAGACCCUAGCUUCGGCUAGAGGGUCAACGCGAAAGCGAGGCCGGGUGGGCGGGUACGUCCGCCCUGGGGAGGGGUCC"
+    },
+    "1KPD-2D": {
+        "sequence": "GGCGCAGUGGGCUAGCGCCACUCAAAGGCCCG"
+    },
+    "2KUR-2D": {
+        "sequence": "GGCUUGAUUGUAUUAUUAAAUUAAUUCUUAAUAACUACAAAUUAAGCC"
+    },
+    "2Z9Q-2D": {
+        "sequence": "CGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACCA"
+    },
+    "5KH8-2D": {
+        "sequence": "GGCGAUGGUGUUCGCCAUAAACGCUCUUCGGAGCUAAUGACACCUAC"
+    },
+    "7XSL-2D": {
+        "sequence": "GGAGGGAAAAGUUAUCAGGCAUGCACCUGGUAGCUAGUCUUUAAACCAAUAGAUUGCAUCGGUUUAAAAGGCAAGACCGUCAAAUUGCGGGAAAGGGGUCAACAGCCGUUCAGUACCAAGUCUCAGGGGAAACUUUGAGAUGGCCUUGCAAAGGGUAUGGUAAUAAGCUGACGGACAUGGUCCUAACCACGCAGCCAAGUCCUAAGUCAACAGAUCUUCUGUUGAUAUGGAUGCAGUUCACAGACUAAAUGUCGGUCGGGGAAGAUGUAUUCUUCUCAUAAGAUAUAGUCGGACCUCUCCUUAAUGGGAGCUAGCGGAUGAAGUGAUGCAACACUGGAGCCGCUGGGAACUAAUUUGUAUGCGAAAGUAUAUUGAUUAGUUUUGGAGU"
+    },
+    "28SR-2D": {
+        "sequence": "GGCGUCAGGUCCGGAAGGAAGCAGCGCC"
+    },
+    "1BGZ-2D": {
+        "sequence": "GGGAUACUGCUUCGGUAAGUCCC"
+    },
+    "2HNS-2D": {
+        "sequence": "GGCGUGAUCAAGUGAUCGCGCC"
+    },
+    "1QZA-2D": {
+        "sequence": "GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACC"
+    },
+    "2KPV-2D": {
+        "sequence": "GGAGGUAGUAGGUCGAAAGACCGUUCUACACUCC"
+    },
+    "2PCV-2D": {
+        "sequence": "GGACCCGCCACUGCAGAGAUGCAAUCCAGUGGUCC"
+    },
+    "2N6T-2D": {
+        "sequence": "GGGUAGAGUAUAAUUAGUCUUCGGACUUCCUUAUACUUAUCC"
+    },
+    "5LSN-2D": {
+        "sequence": "CCUCGUGGUGGUUGUGAACCACCAUGUGG"
+    },
+    "2M8K-2D": {
+        "sequence": "GGUUUCUUUUUAGUGAUUUUUCCAAACCCCUUUGUGCAAAAAUCAUUA"
+    },
+    "1Z31-2D": {
+        "sequence": "GAGGUCGGCCCGACUUCGGUCACUGCCACCUC"
+    },
+    "1SZY-2D": {
+        "sequence": "GGCAGGGCUCAUAACCCUGCC"
+    },
+    "2LV0-2D": {
+        "sequence": "GGGCUAAUGUUGAAAAAUUAGCCC"
+    },
+    "6XRZ-2D": {
+        "sequence": "GUUUUUAAACGGGUUUGCGGUGUAAGUGCAGCCCGUCUUACACCGUGCGGCACAGGCACUAGUACUGAUGUCGUAUACAGGGCUUUUG"
+    },
+    "1S2F-2D": {
+        "sequence": "GGGGAGUGGUUUGUAUCCUUCCC"
+    },
+    "1XV6-2D": {
+        "sequence": "CGCGAAUUCGCG"
+    },
+    "1SCL-2D": {
+        "sequence": "GGGUGCUCAGUACGAGAGGAACCGCACCC"
+    },
+    "2JTP-2D": {
+        "sequence": "GGAUGGGGAAAGAAGCCCCGCAAUUUCCCCAUCC"
+    },
+    "2RLU-2D": {
+        "sequence": "GGUUGCGGGUCUCGCAACC"
+    },
+    "1KKS-2D": {
+        "sequence": "GGAAGGCCCUUUUCAGGGCCACCC"
+    },
+    "2IXY-2D": {
+        "sequence": "GGCCUCCAAGCUGUGCCUUGGGUGGCC"
+    },
+    "1IDV-2D": {
+        "sequence": "GGGCGUGCCC"
+    },
+    "1IE1-2D": {
+        "sequence": "GGCCGAAAUCCCGAAGUAGGCC"
+    },
+    "6XWJ-2D": {
+        "sequence": "GGUGCCUAAUAUUUAGGCACC"
+    },
+    "2KVN-2D": {
+        "sequence": "GGUGAUUGAGUUCACCA"
+    },
+    "2F87-2D": {
+        "sequence": "GGCUGAAGGGCC"
+    },
+    "1ESH-2D": {
+        "sequence": "GGUGCAUAGCACC"
+    },
+    "2N8V-2D": {
+        "sequence": "GGAACAGCUGUACUGGGCAGUUACAGCAGUCGUAUGGUAACACAUGCGGCGUUCCGAAAUACCAUGCCUG"
+    },
+    "2L3E-2D": {
+        "sequence": "GGCUUUUGCUCCCCGUGCUUCGGCACGGAAAAGCC"
+    },
+    "6EZ0-2D": {
+        "sequence": "GGAGCGGGGGUGUAAACCUAUCGCUCC"
+    },
+    "6XXB-2D": {
+        "sequence": "GGAAAUUAUAUUAAUUUCC"
+    },
+    "5A17-2D": {
+        "sequence": "GACGAUAUCGAGCAUCAAGAGUGAAUAUCGUC"
+    },
+    "7V06-2D": {
+        "sequence": "GGUGCUGUUUAUCCAUUUCAGAAUUGGGUGUCGACAUAGCACC"
+    },
+    "1K4B-2D": {
+        "sequence": "GGUUCAGUUGAACC"
+    },
+    "6W3M-2D": {
+        "sequence": "GGUUUGUUUGAAUAGAGAGCAGAUCUCUGGAAAAAUGAACC"
+    },
+    "1BVJ-2D": {
+        "sequence": "GGCGACGGUGUAAAAAUCUCGCC"
+    },
+    "6HYK-2D": {
+        "sequence": "GGCACGGUGAUGACCUUCGGGUCUGAGUGCC"
+    },
+    "1KP7-2D": {
+        "sequence": "GGCGCUCAAUGCUCUUCGGAGACGACCGCC"
+    },
+    "1KAJ-2D": {
+        "sequence": "GGCGCAGUGGGCUAGCGCCACUCAAAAGCCCG"
+    },
+    "2JXV-2D": {
+        "sequence": "GGAGGUAGUAGGUCGAAAGACCAUUCUGCCUCC"
+    },
+    "2KUU-2D": {
+        "sequence": "GGCUUGAUUGUAUGUGUAAAUUAAUUCUUACACACUACAAAUUAAGCC"
+    },
+    "1HS3-2D": {
+        "sequence": "GCGUUAAUUCGCA"
+    },
+    "2MN0-2D": {
+        "sequence": "GGAGAGUGGAACUCC"
+    },
+    "2U2A-2D": {
+        "sequence": "GGUCAGUGUAACAACUGACC"
+    },
+    "1IKD-2D": {
+        "sequence": "GGGGCUCUUCGGAGCUCCACCA"
+    },
+    "2M57-2D": {
+        "sequence": "GGAGCCGUAUGCGGUAGUUCCGCACGUACGGAUCU"
+    },
+    "2B7G-2D": {
+        "sequence": "GGAGGCUCUGGCAGCUUUC"
+    },
+    "1C2X-2D": {
+        "sequence": "UGCCUGGCGGCCGUAGCGCGGUGGUCCCACCUGACCCCAUGCCGAACUCAGAAGUGAAACGCCGUAGCGCCGAUGGUAGUGUGGGGUCUCCCCAUGCGAGAGUAGGGAACUGCCAGGCAU"
+    },
+    "1B36-2D": {
+        "sequence": "GGUGCAGAAACAGCGCUUCGGCGCGUAUAUUACGCACC"
+    },
+    "1MFY-2D": {
+        "sequence": "AGUAGAAACAAGGCUUCGGCCUGCUUUCGCU"
+    },
+    "1F84-2D": {
+        "sequence": "GGCCGAGUAGUGUUGGGUCGCGAAAGGCC"
+    },
+    "1TLR-2D": {
+        "sequence": "GGCCUAAGACUUCGGUUAUGGCC"
+    },
+    "2LUB-2D": {
+        "sequence": "GGGUGAAACGGAGGACUUCGGUCCUCAAGUUUCACCC"
+    },
+    "1YG3-2D": {
+        "sequence": "AGUGGCGCCGACCACUUAAAAACACCGG"
+    },
+    "5WQ1-2D": {
+        "sequence": "GGACAUCAGAUUUCCUGGUGUCC"
+    },
+    "2F88-2D": {
+        "sequence": "GAGCCGUGUGCGAUGAAAGUCGCAAGCACGGUUC"
+    },
+    "2KRV-2D": {
+        "sequence": "CUCGGCUGCGAACCGAG"
+    },
+    "1VOP-2D": {
+        "sequence": "GACUGGGGCGGUC"
+    },
+    "1JO7-2D": {
+        "sequence": "AGUAGAAACAAGGCUUCGGCCUGCUUUUGCU"
+    },
+    "7UME-2D": {
+        "sequence": "GGCCGACAAGAACAGUUUCGAAUCGGCC"
+    },
+    "1ZIF-2D": {
+        "sequence": "GGGCGAAAGCCU"
+    },
+    "6PK9-2D": {
+        "sequence": "GGAGGGUAGACUCGCUCUCC"
+    },
+    "1F9L-2D": {
+        "sequence": "GGCGAAGUCGAAAGAUGGCGCC"
+    },
+    "7KUD-2D": {
+        "sequence": "GGUUUCGGGAACC"
+    },
+    "2LBK-2D": {
+        "sequence": "GGGACCUUCCCGGUCUC"
+    },
+    "2LBJ-2D": {
+        "sequence": "GGGCCUUGCCAAGGUCC"
+    },
+    "2HUA-2D": {
+        "sequence": "GGCCUCCAGCGACGGCCUUCGGGACUAGCAAACGGAGGCC"
+    },
+    "2NBY-2D": {
+        "sequence": "GGGCAGAAGGUACCCCAUUGUAUGGGAUCUGAUCUGCCC"
+    },
+    "2NBX-2D": {
+        "sequence": "GGGGCUGAAGGAUGCCCAGAAGGUACCCCAUUGUAUGGGAUCUGAUCUGGGGCCUCGGUGCACAUGCUUUACAUGUGUUUAGUCGAGGUUAAAAAACGUCUAGGCCCC"
+    },
+    "1MFK-2D": {
+        "sequence": "GGCGGUUGCAGGUCUGCACCGCC"
+    },
+    "1OQ0-2D": {
+        "sequence": "GAGAGUUGGGCUCUC"
+    },
+    "6WLK-2D": {
+        "sequence": "GGCGAUAUGGCAUGGAAUCAGCUCAAGGAACUGUGAACGUAUAUCGGGCAACGACUAGGAAACUAGUCGUUGGGAAGAAACUGCCGAUAUACGGGAGUUCCUUGAGCGGGAGAUUCCAUGCCUAAGUCGC"
+    },
+    "2JYM-2D": {
+        "sequence": "GGCUCGCAGCAGGUCUGGAGUC"
+    },
+    "1TXS-2D": {
+        "sequence": "GGGCUAGCACUCUGGUAUUACGGUACCUUUGUGCGCCC"
+    },
+    "1E4P-2D": {
+        "sequence": "GUGCGAAGACGAAAGUCCGAGCGC"
+    },
+    "8U3M-2D": {
+        "sequence": "GGCAGAUCUGAGCCUUCGGGAGCUCUCUGCC"
+    },
+    "1N66-2D": {
+        "sequence": "GGACCUCUCGAAAGAGUUGUCC"
+    },
+    "6VU1-2D": {
+        "sequence": "GGGUCUCUCUUGUCGAGAGGCAAGGAACCCACU"
+    },
+    "5UF3-2D": {
+        "sequence": "GGACAUAAGGAAAACCUAUGUCC"
+    },
+    "3IZD-2D": {
+        "sequence": "GGUCGGGUAGUGAGGGCCUUGGUCAGACGCAGCGGGCGUGCUUGUGGACUGCUUGGUGGGGCUUGCUCUGCUAGGCGGACUACUUGCGUGCCUUGUUGUAGACGGCCUUGGUAGGUCUCUUGUAGACCGUCGCUUGCUACAAUUAACGAUC"
+    },
+    "2LUN-2D": {
+        "sequence": "GGGCAGUGAUGCUUCGGCAUAUCAGCCC"
+    },
+    "6MXQ-2D": {
+        "sequence": "GGCAGUAUAGUCCGAACUGCAACUUCGGUUCACCUUCUCUCUAACUGCC"
+    },
+    "2MNC-2D": {
+        "sequence": "GGGUUGACCGUUGAAUCUCACGG"
+    },
+    "7Q6L-2D": {
+        "sequence": "GGGCCAUAGGGUGGGAUCUGGG"
+    },
+    "2LU0-2D": {
+        "sequence": "GGAAUAUGCUCAACGAAAGUGAAUCAGCUUCGGCUGAGAGCUAAGUUCC"
+    },
+    "2M12-2D": {
+        "sequence": "GGGUGUAUUGGAAAUGAGCACCC"
+    }
+}
