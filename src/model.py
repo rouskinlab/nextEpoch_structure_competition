@@ -36,6 +36,12 @@ class RNA_embedding(nn.Module):
 
         return s, m
 
+class ResBlock(nn.Module):
+
+    def __init__(self, in_channel, out_channel):
+
+        self.conv1 = nn.Conv2d(in_channel, in_channel, kernel_size=3, padding=1)
+        self.conv2 = nn.Conv2d(in_channel, out_channel, kernel_size=3, padding=1)
 
 # This is the class to be developed !
 class RNA_net(nn.Module):
@@ -45,12 +51,27 @@ class RNA_net(nn.Module):
 
         self.embedding = RNA_embedding(embedding_dim)
 
+        self.conv1 = nn.Conv2d(embedding_dim, embedding_dim, kernel_size=3, padding=1)
+        self.conv2 = nn.Conv2d(embedding_dim, embedding_dim, kernel_size=3, padding=1)
+        self.conv3 = nn.Conv2d(embedding_dim, embedding_dim, kernel_size=3, padding=1)
+
+        self.conv4 = nn.Conv2d(embedding_dim, embedding_dim//2, kernel_size=3, padding=1)
+        self.conv5 = nn.Conv2d(embedding_dim//2, embedding_dim//2, kernel_size=3, padding=1)
+        self.conv6 = nn.Conv2d(embedding_dim//2, 1, kernel_size=3, padding=1)
+
         # Your layers here
 
     def forward(self, x):
+        # x is (N, L)
+        _, m = self.embedding(x) 
+        # m is (N, d, L, L)
 
-        s, m = self.embedding(x)
+        m = self.conv1(m) # (N, 1, L, L)
+        m = self.conv2(m)
+        m = self.conv3(m)
+        m = self.conv4(m)
+        m = self.conv5(m)
+        m = self.conv6(m)
 
-        # Your forward pass here
-
-        return m
+        output = m.squeeze(1) # output is (N, L, L)
+        return output

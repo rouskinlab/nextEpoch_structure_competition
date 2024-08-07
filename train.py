@@ -7,12 +7,37 @@ import torch
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-train_loader, val_loader, test_loader = get_dataloaders(batch_size = 4, max_length=50, split=0.8, max_data=1000)
+train_loader, val_loader, test_loader = get_dataloaders(batch_size = 2, max_length=50, split=0.8, max_data=1000)
 
 # Init model, loss function, optimizer
-
+model = RNA_net(embedding_dim=32)
+criterion = torch.nn.BCEWithLogitsLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # Training loop
+for epoch in range(10):
+
+    loss_epoch = 0.0
+    metric_epoch = 0.0
+
+    for batch in train_loader:
+
+        x = batch["sequence"] # (N, L)
+        y = batch['structure'] # (N, L, L)
+
+        y_pred = model(x)
+
+        loss = criterion(y_pred, y)
+        optimizer.zero_grad()
+        loss.backward()
+
+        optimizer.step()
+
+        loss_epoch += loss.item()
+        metric_epoch += compute_f1(y_pred, y)
+
+    print("Loss", loss_epoch/len(train_loader))
+    print("F1 score", metric_epoch/len(train_loader))
 
 
 # Validation loop
