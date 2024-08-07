@@ -36,21 +36,57 @@ class RNA_embedding(nn.Module):
 
         return s, m
 
-
-# This is the class to be developed !
 class RNA_net(nn.Module):
-
     def __init__(self, embedding_dim):
         super(RNA_net, self).__init__()
 
+        # Define the embedding layer
         self.embedding = RNA_embedding(embedding_dim)
-
-        # Your layers here
+        
+        # Define your layers for the network
+        self.conv1 = nn.Conv2d(embedding_dim, 64, kernel_size=3, padding=1)
+        self.conv2 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.fc1 = nn.Linear(128 * (embedding_dim // 2) * (embedding_dim // 2), 512)
+        self.fc2 = nn.Linear(512, 1)  # Assuming binary classification for secondary structure
 
     def forward(self, x):
-
+        # Get embeddings
         s, m = self.embedding(x)
+        
+        # Apply convolutional layers
+        x = self.pool(F.relu(self.conv1(m)))
+        x = self.pool(F.relu(self.conv2(x)))
+        
+        # Flatten the tensor
+        x = x.view(x.size(0), -1)
+        
+        # Apply fully connected layers
+        x = F.relu(self.fc1(x))
+        x = self.fc2(x)
+        
+        return x
 
-        # Your forward pass here
+# Example usage
+# Define input size and create the model
+embedding_dim = 50
+model = RNA_net(embedding_dim)
+print(model)
 
-        return m
+# This is the class to be developed !
+#class RNA_net(nn.Module):
+
+#   def __init__(self, embedding_dim):
+#      super(RNA_net, self).__init__()
+
+#        self.embedding = RNA_embedding(embedding_dim)
+
+#       # Your layers here
+
+#    def forward(self, x):
+
+#       s, m = self.embedding(x)
+
+#        # Your forward pass here
+
+#       return m
