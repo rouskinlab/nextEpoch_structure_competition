@@ -1,7 +1,7 @@
 from src.data import get_dataloaders
 from src.model import RNA_net
 from src.util import compute_f1, compute_precision, compute_recall, plot_structures
-from submission_formatter import format_submission
+from src.submission_formatter import format_submission
 
 import torch
 
